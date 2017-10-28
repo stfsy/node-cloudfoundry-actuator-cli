@@ -25,5 +25,8 @@ describe('GitInfoContributor', () => {
         it('should return the remote repo', () => {
             expect(gitInfoContributor.getInfo().remote.origin.url).to.equal(packageJson.repository.url)
         })
+        it('should return the commit id', () => {
+            expect(gitInfoContributor.getInfo().commit.id).not.to.be.undefined
+        })
     })
 })
