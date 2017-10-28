@@ -1,3 +1,13 @@
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v0.2.0...v0.3.0) (2017-10-28)
+
+
+### Features
+
+* remove git+ from repo urls ([a9bfd09](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/a9bfd09))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v0.1.0...v0.2.0) (2017-10-28)
 
