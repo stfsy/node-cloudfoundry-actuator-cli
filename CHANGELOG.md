@@ -1,3 +1,13 @@
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v0.3.0...v0.4.0) (2017-10-28)
+
+
+### Bug Fixes
+
+* fix user is  not a property of commit ([08a75b9](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/08a75b9))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v0.2.0...v0.3.0) (2017-10-28)
 
