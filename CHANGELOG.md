@@ -1,3 +1,21 @@
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v0.1.0...v0.2.0) (2017-10-28)
+
+
+### Bug Fixes
+
+* add missing commit id ([92ab4a1](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/92ab4a1))
+* fix message does not contain short message ([3d4da33](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/3d4da33))
+* fix remote origin url is undefined ([3f957c4](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/3f957c4))
+* fix remote url does not end with .git ([f8f0f87](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/f8f0f87))
+
+
+### Features
+
+* add user email to info ([9f6354d](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/9f6354d))
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2017-10-27)
 
