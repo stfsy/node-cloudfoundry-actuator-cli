@@ -1,6 +1,7 @@
 'use strict'
 
 const resolve = require('path').resolve
+const packageJson = require('../../../package')
 const GitInfoContributor = require(resolve('lib/contributors/git'))
 
 const expect = require('chai').expect
@@ -22,7 +23,7 @@ describe('GitInfoContributor', () => {
             expect(gitInfoContributor.getInfo().branch).not.to.be.undefined
         })
         it('should return the remote repo', () => {
-            expect(gitInfoContributor.getInfo().remote.url).not.to.be.undefined
+            expect(gitInfoContributor.getInfo().remote.origin.url).to.equal(packageJson.repository.url)
         })
     })
 })
