@@ -33,7 +33,6 @@ describe('GitInfoContributor', () => {
             expect(gitInfoContributor.getInfo().commit.message.short).not.to.be.undefined
         })
         it('should return the commit authors email', () => {
-            console.log(gitInfoContributor.getInfo())
             expect(gitInfoContributor.getInfo().commit.user.email).not.to.be.undefined
         })
     })
