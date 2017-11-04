@@ -17,7 +17,7 @@ Add actuator script to your package json
 
 ```json
 {
-    "scripts: {
+    "scripts": {
         "actuator": "cloudfoundry-actuator-cli"
     }
 }
