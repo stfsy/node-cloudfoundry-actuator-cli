@@ -15,6 +15,8 @@ Generates a .json file, that can be consumed by [Express Cloud Foundry Actuator 
 
 The file is by default placed in **.actuator** and is called **info.json**.
 
+See [Express Actuator Middleware Example](https://github.com/stfsy/express-cloudfoundry-actuator-middleware-example) for an example application with full integration of this cli and [Express Cloud Foundry Actuator Middleware](https://github.com/stfsy/express-cloudfoundry-actuator-middleware).
+
 ## Example
 
 Add actuator script to your package.json:
@@ -33,7 +35,7 @@ Run **actuator** script:
 npm run actuator
 ```
 
-See generated File in **.actuator/info.json**:
+Voilà, see generated File **.actuator/info.json**:
 
 ```json
 {
