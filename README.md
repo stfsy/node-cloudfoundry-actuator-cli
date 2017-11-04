@@ -17,6 +17,13 @@ The file is by default placed in **.actuator** and is called **info.json**.
 
 See [Express Actuator Middleware Example](https://github.com/stfsy/express-cloudfoundry-actuator-middleware-example) for an example application with full integration of this cli and [Express Cloud Foundry Actuator Middleware](https://github.com/stfsy/express-cloudfoundry-actuator-middleware).
 
+
+## Installation
+
+```
+npm install node-cloudfoundry-actuator-cli --save
+```
+
 ## Example
 
 Add actuator script to your package.json:
@@ -66,12 +73,6 @@ Voilà, see generated File **.actuator/info.json**:
   }
 }
 
-```
-
-## Installation
-
-```
-npm install node-cloudfoundry-actuator-cli --save
 ```
 
 ## License
