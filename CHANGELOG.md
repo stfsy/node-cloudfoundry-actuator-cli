@@ -1,3 +1,8 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v0.4.0...v1.0.0) (2017-11-04)
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v0.3.0...v0.4.0) (2017-10-28)
 
