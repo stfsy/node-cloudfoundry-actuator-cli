@@ -1,3 +1,13 @@
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v1.0.0...v1.0.1) (2017-11-10)
+
+
+### Bug Fixes
+
+* fix commander is not a dependency ([4455435](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/4455435))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v0.4.0...v1.0.0) (2017-11-04)
 
