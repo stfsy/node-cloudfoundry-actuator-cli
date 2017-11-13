@@ -18,6 +18,11 @@ describe('GitInfoContributor', () => {
             expect(gitInfoContributor.getName()).to.equal('git')
         })
     })
+    describe('.getContext', () => {
+        it('should return git', () => {
+            expect(gitInfoContributor.getContext()).to.equal('git')
+        })
+    })
     describe('.getInfo', () => {
         it('should return a branch', () => {
             expect(gitInfoContributor.getInfo().branch).not.to.be.undefined
