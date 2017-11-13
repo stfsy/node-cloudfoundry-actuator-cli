@@ -18,6 +18,11 @@ describe('NpmInfoContributor', () => {
             expect(npmInfoContributor.getName()).to.equal('build')
         })
     })
+    describe('.getContext', () => {
+        it('should return build', () => {
+            expect(npmInfoContributor.getContext()).to.equal('build')
+        })
+    })
     describe('.getInfo', () => {
         it('should return the application name', () => {
             expect(npmInfoContributor.getInfo().name).to.equal(process.env.NPM_PACKAGE_NAME)
