@@ -14,18 +14,18 @@ describe('Registry', () => {
     })
     describe('.getContributors', () => {
         it('should return git and npm info contributor', () => {
-            const contributors = registry.getContributors(['git', 'build'])
+            const contributors = registry.getContributors(['git', 'npm'])
             expect(contributors.length).to.equal(2)
             const filtered = contributors.filter(contributor => {
                 const name = contributor.getName()
-                return (name != 'git' && name != 'build')
+                return (name != 'git' && name != 'npm')
             })
             expect(filtered.length).to.equal(0)
         })
         it('should return npm info contributor', () => {
-            const contributors = registry.getContributors(['build'])
+            const contributors = registry.getContributors(['npm'])
             expect(contributors.length).to.equal(1)
-            expect(contributors[0].getName()).to.equal('build')
+            expect(contributors[0].getName()).to.equal('npm')
         })
         it('should return git info contributor', () => {
             const contributors = registry.getContributors(['git'])
