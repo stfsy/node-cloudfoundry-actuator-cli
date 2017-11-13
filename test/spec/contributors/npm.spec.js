@@ -15,7 +15,7 @@ describe('NpmInfoContributor', () => {
 
     describe('.getName', () => {
         it('should return build', () => {
-            expect(npmInfoContributor.getName()).to.equal('build')
+            expect(npmInfoContributor.getName()).to.equal('npm')
         })
     })
     describe('.getContext', () => {
