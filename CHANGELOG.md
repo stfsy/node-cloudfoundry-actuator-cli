@@ -1,3 +1,13 @@
+<a name="1.0.2"></a>
+## [1.0.2](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v1.0.1...v1.0.2) (2017-11-13)
+
+
+### Bug Fixes
+
+* **git.js:** fix reads wrong package json info ([63ff605](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/63ff605))
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v1.0.0...v1.0.1) (2017-11-10)
 
