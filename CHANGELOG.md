@@ -1,3 +1,13 @@
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v1.0.2...v1.0.3) (2017-11-14)
+
+
+### Bug Fixes
+
+* type error if repository not a obj with props ([53c5e79](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/53c5e79))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v1.0.1...v1.0.2) (2017-11-13)
 
