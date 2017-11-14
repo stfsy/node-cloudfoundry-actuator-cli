@@ -6,7 +6,7 @@ const MvnInfoContributor = require(resolve('lib/contributors/mvn'))
 const expect = require('chai').expect
 
 describe('MvnInfoContributor', () => {
-    
+
     let mvnInfoContributor
 
     beforeEach(() => {
@@ -24,6 +24,14 @@ describe('MvnInfoContributor', () => {
         })
     })
     describe('.getInfo', () => {
-       
+        it('should return the artifactId', () => {
+            expect(mvnInfoContributor.getInfo().artifactId).to.equal('my-project')
+        })
+        it('should return the groupId', () => {
+            expect(mvnInfoContributor.getInfo().groupId).to.equal('org.just.4.testing')
+        })
+        it('should return the version', () => {
+            expect(mvnInfoContributor.getInfo().version).to.equal('2.0')
+        })
     })
 })
