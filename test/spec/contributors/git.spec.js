@@ -40,4 +40,20 @@ describe('GitInfoContributor', () => {
             expect(gitInfoContributor.getInfo().commit.user.email).not.to.be.undefined
         })
     })
+    describe('.getInfo', () => {
+        beforeEach(() => {
+            packageJson.repository = 'https://www.github.com/stfsy/node-cloudfoundry-actuator'
+        })
+        it('should return the remote repo', () => {
+            expect(gitInfoContributor.getInfo().remote.origin.url).to.equal(packageJson.repository)
+        })
+    })
+    describe('.getInfo', () => {
+        beforeEach(() => {
+            packageJson.repository = {}
+        })
+        it('should return no remote repo', () => {
+            expect(gitInfoContributor.getInfo().remote.origin.url).to.be.undefined
+        })
+    })
 })
