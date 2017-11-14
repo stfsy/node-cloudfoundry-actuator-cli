@@ -19,7 +19,7 @@ const folder = commander.folder
 
 const contributors = []
 git && contributors.push('git')
-npm && contributors.push('build')
+npm && contributors.push('npm')
 
 new Adapter().generateBuildInfo({
     contributors
