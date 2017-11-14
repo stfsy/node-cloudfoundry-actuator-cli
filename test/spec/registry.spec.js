@@ -32,5 +32,11 @@ describe('Registry', () => {
             expect(contributors.length).to.equal(1)
             expect(contributors[0].getName()).to.equal('git')
         })
+        it('should return the mvn info contributor', () => {
+            const contributors = registry.getContributors(['mvn'])
+            expect(contributors.length).to.equal(1)
+            expect(contributors[0].getName()).to.equal('mvn')
+            expect(contributors[0].getContext()).to.equal('build')
+        })
     })
 })
