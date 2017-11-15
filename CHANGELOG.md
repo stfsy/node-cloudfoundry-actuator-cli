@@ -1,3 +1,13 @@
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v1.0.3...v1.0.4) (2017-11-15)
+
+
+### Bug Fixes
+
+* fix .git is not appended to git repo urls ([a13e21a](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/a13e21a))
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v1.0.2...v1.0.3) (2017-11-14)
 
