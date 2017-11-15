@@ -48,4 +48,36 @@ describe('Cli', () => {
             expect(json.build.version).not.to.be.undefined
         })
     })
+    describe('started with flags --git --mvn', () => {
+        beforeEach(() => {
+            return spawn('node', ['bin/cli', '--mvn', '--git'])
+        })
+        it('should only write git and npm build info', () => {
+            const json = fs.readJSONSync(resolve('.actuator/info.json'))
+            expect(Object.keys(json).length).to.equal(2)
+            expect(json.git).not.to.be.undefined
+            expect(json.git.commit).not.to.be.undefined
+            expect(json.git.branch).not.to.be.undefined
+            expect(json.build).not.to.be.undefined
+            expect(json.build.artifactId).not.to.be.undefined
+            expect(json.build.groupId).not.to.be.undefined
+            expect(json.build.version).not.to.be.undefined
+        })
+    })
+    describe('started with flags --git --npm', () => {
+        beforeEach(() => {
+            return spawn('node', ['bin/cli', '--npm', '--git'])
+        })
+        it('should only write git and npm build info', () => {
+            const json = fs.readJSONSync(resolve('.actuator/info.json'))
+            expect(Object.keys(json).length).to.equal(2)
+            expect(json.git).not.to.be.undefined
+            expect(json.git.commit).not.to.be.undefined
+            expect(json.git.branch).not.to.be.undefined
+            expect(json.build).not.to.be.undefined
+            expect(json.build.name).not.to.be.undefined
+            expect(json.build.version).not.to.be.undefined
+            expect(json.build.description).not.to.be.undefined
+        })
+    })
 })
