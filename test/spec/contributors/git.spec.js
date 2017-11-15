@@ -28,7 +28,7 @@ describe('GitInfoContributor', () => {
             expect(gitInfoContributor.getInfo().branch).not.to.be.undefined
         })
         it('should return the remote repo', () => {
-            expect(gitInfoContributor.getInfo().remote.origin.url).to.equal(packageJson.repository.url)
+            expect(gitInfoContributor.getInfo().remote.origin.url).to.equal(packageJson.repository.url + '.git')
         })
         it('should return the commit id', () => {
             expect(gitInfoContributor.getInfo().commit.id).not.to.be.undefined
@@ -45,7 +45,7 @@ describe('GitInfoContributor', () => {
             packageJson.repository = 'https://www.github.com/stfsy/node-cloudfoundry-actuator'
         })
         it('should return the remote repo', () => {
-            expect(gitInfoContributor.getInfo().remote.origin.url).to.equal(packageJson.repository)
+            expect(gitInfoContributor.getInfo().remote.origin.url).to.equal(packageJson.repository + '.git')
         })
     })
     describe('.getInfo', () => {
