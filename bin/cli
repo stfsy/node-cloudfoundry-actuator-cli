@@ -8,18 +8,21 @@ const Adapter = require('../lib/index')
 
 commander
     .version(version)
-    .option('--git <boolean>', 'generate git info file', true)
-    .option('--npm <boolean>', 'generate npm build info file', true)
+    .option('--git', 'generate git info file')
+    .option('--npm', 'generate npm build info file')
+    .option('--mvn', 'generate mvn build info file')
     .option('--folder <string>', 'the output folder', '.actuator')
     .parse(process.argv)
 
 const git = commander.git
 const npm = commander.npm
+const mvn = commander.mvn
 const folder = commander.folder
 
 const contributors = []
 git && contributors.push('git')
 npm && contributors.push('npm')
+mvn && contributors.push('mvn')
 
 new Adapter().generateBuildInfo({
     contributors
