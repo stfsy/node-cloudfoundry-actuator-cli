@@ -3,8 +3,10 @@
 const spawn = require('./spawn')
 const resolve = require('path').resolve
 const fs = require('fs-extra')
+const os = require('os')
 
 const expect = require('chai').expect
+const npm = os.type().indexOf('Win') > -1 ? 'npm.cmd' : 'npm'
 
 describe('Cli', () => {
     afterEach(() => {
@@ -12,7 +14,7 @@ describe('Cli', () => {
     })
     describe('started with flag --git', () => {
         beforeEach(() => {
-            return spawn('node', ['bin/cli', '--git'])
+            return spawn(npm, ['run', 'actuator', '--', '--git'])
         })
         it('should only write git info', () => {
             const json = fs.readJSONSync(resolve('.actuator/info.json'))
@@ -24,7 +26,7 @@ describe('Cli', () => {
     })
     describe('started with flag --npm', () => {
         beforeEach(() => {
-            return spawn('node', ['bin/cli', '--npm'])
+            return spawn(npm, ['run', 'actuator', '--', '--npm'])
         })
         it('should only write npm build info', () => {
             const json = fs.readJSONSync(resolve('.actuator/info.json'))
@@ -37,7 +39,7 @@ describe('Cli', () => {
     })
     describe('started with flag --mvn', () => {
         beforeEach(() => {
-            return spawn('node', ['bin/cli', '--mvn'])
+            return spawn(npm, ['run', 'actuator', '--', '--mvn'])
         })
         it('should only write npm build info', () => {
             const json = fs.readJSONSync(resolve('.actuator/info.json'))
@@ -50,7 +52,7 @@ describe('Cli', () => {
     })
     describe('started with flags --git --mvn', () => {
         beforeEach(() => {
-            return spawn('node', ['bin/cli', '--mvn', '--git'])
+            return spawn(npm, ['run', 'actuator', '--', '--mvn', '--git'])
         })
         it('should only write git and npm build info', () => {
             const json = fs.readJSONSync(resolve('.actuator/info.json'))
@@ -66,7 +68,7 @@ describe('Cli', () => {
     })
     describe('started with flags --git --npm', () => {
         beforeEach(() => {
-            return spawn('node', ['bin/cli', '--npm', '--git'])
+            return spawn(npm, ['run', 'actuator', '--', '--npm', '--git'])
         })
         it('should only write git and npm build info', () => {
             const json = fs.readJSONSync(resolve('.actuator/info.json'))
