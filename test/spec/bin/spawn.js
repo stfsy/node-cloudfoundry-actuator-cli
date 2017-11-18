@@ -8,7 +8,7 @@ module.exports = (command, args) => {
             cwd: process.cwd()
         })
 
-        proc.stderr.on('data', (data) => {
+        proc.stderr.on('error', (data) => {
             console.log(data)
         })
 
