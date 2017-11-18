@@ -1,11 +1,13 @@
 'use strict'
 
 const spawn = require('child_process').spawn
+const resolve = require('path').resolve
+const cwd = resolve(__dirname, '../../../')
 
 module.exports = (command, args) => {
     return new Promise((resolve, reject) => {
         const proc = spawn(command, args, {
-            cwd: process.cwd()
+            cwd: cwd
         })
 
         proc.stderr.on('error', (data) => {
