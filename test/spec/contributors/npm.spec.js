@@ -25,13 +25,13 @@ describe('NpmInfoContributor', () => {
     })
     describe('.getInfo', () => {
         it('should return the application name', () => {
-            expect(npmInfoContributor.getInfo().name).to.equal(process.env.NPM_PACKAGE_NAME)
+            expect(npmInfoContributor.getInfo().name).to.equal(process.env.npm_package_name)
         })
         it('should return the application version', () => {
-            expect(npmInfoContributor.getInfo().version).to.equal(process.env.NPM_PACKAGE_VERSION)
+            expect(npmInfoContributor.getInfo().version).to.equal(process.env.npm_package_version)
         })
         it('should return the application description', () => {
-            expect(npmInfoContributor.getInfo().description).to.equal(process.env.NPM_PACKAGE_DESCRIPTION)
+            expect(npmInfoContributor.getInfo().description).to.equal(process.env.npm_package_description)
         })
     })
 })
