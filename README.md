@@ -30,10 +30,17 @@ Add actuator script to your package.json:
 ```json
 {
     "scripts": {
-        "actuator": "cloudfoundry-actuator-cli"
+        "actuator": "cloudfoundry-actuator-cli --git --npm"
     }
 }
 ```
+
+Available options are:
+- --git: Enables git repository information contribution
+- --npm: Enables npm build information contribution
+- --mvn: Enables maven build information contribution
+
+No option is enabled by default.
 
 Run **actuator** script:
 
