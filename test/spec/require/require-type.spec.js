@@ -15,9 +15,9 @@ describe('RequireType', () => {
             expect(contributor.getName()).to.be.oneOf(['mvn', 'npm', 'git'])
         })
     })
-    it('should return include the base type', () => {
+    it('should include the base type, too', () => {
         const contributors = requireType(dir, BaseType).map(Constructor => new Constructor())
-        expect(contributors.length).to.equal(3)
+        expect(contributors.length).to.equal(4)
         contributors.forEach((contributor) => {
             expect(contributor.getName()).to.be.oneOf(['mvn', 'npm', 'git', undefined])
         })
