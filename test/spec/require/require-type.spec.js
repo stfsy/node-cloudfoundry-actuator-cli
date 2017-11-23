@@ -22,4 +22,15 @@ describe('RequireType', () => {
             expect(contributor.getName()).to.be.oneOf(['mvn', 'npm', 'git', undefined])
         })
     })
+    it('should include subtypes and search in nested folders', () => {
+        const contributors = requireType(resolve('lib'), BaseType, {recursive: true}).map(Constructor => new Constructor())
+        expect(contributors.length).to.equal(4)
+        contributors.forEach((contributor) => {
+            expect(contributor.getName()).to.be.oneOf(['mvn', 'npm', 'git', undefined])
+        })
+    })
+    it('should not in nested folders', () => {
+        const contributors = requireType(resolve('lib'), BaseType, {recursive: false}).map(Constructor => new Constructor())
+        expect(contributors.length).to.equal(0)
+    })
 })
