@@ -1,3 +1,27 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v1.0.4...v2.0.0) (2017-11-24)
+
+
+### Bug Fixes
+
+* delete blank from shebang ([ff76c24](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/ff76c24))
+* use correct dirname for contributor lookup ([64b5231](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/64b5231))
+* use lowercase key names for env variables ([a38560d](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/a38560d))
+
+
+### Features
+
+* **bin/cli:** add mvn build info option ([e979534](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/e979534))
+* **mvn.js:** return maven artifact info ([8539411](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/8539411))
+
+
+### BREAKING CHANGES
+
+* **bin/cli:** by default no build info will be collected. make sure
+to add options like --git, --npm or --mvn to the actuator script
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v1.0.3...v1.0.4) (2017-11-15)
 
