@@ -1,3 +1,13 @@
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v2.0.0...v2.0.1) (2018-02-11)
+
+
+### Bug Fixes
+
+* fix cli is not executable ([0ac24ee](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/0ac24ee))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v1.0.4...v2.0.0) (2017-11-24)
 
