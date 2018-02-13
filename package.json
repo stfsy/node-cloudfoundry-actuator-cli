@@ -1,6 +1,6 @@
 {
     "name": "node-cloudfoundry-actuator-cli",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Build time info file generation for Cloud Foundry actuator endpoints",
     "main": "lib/index.js",
     "bin": {
