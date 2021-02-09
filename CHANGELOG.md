@@ -1,3 +1,13 @@
+# [2.4.0](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v2.3.0...v2.4.0) (2021-02-09)
+
+
+### Features
+
+* update outdated dependencies ([64c737f](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/64c737f941a20af627709976867247184d10451a))
+* update vulnerable dependencies ([92fe7c7](https://github.com/stfsy/node-cloudfoundry-actuator-cli/commit/92fe7c7c575db2c060b0c0dcffbbdbfee4a89e22))
+
+
+
 <a name="2.3.0"></a>
 # [2.3.0](https://github.com/stfsy/node-cloudfoundry-actuator-cli/compare/v2.2.0...v2.3.0) (2020-03-22)
 
