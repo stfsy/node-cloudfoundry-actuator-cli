@@ -56,7 +56,7 @@
         "node": "6"
     },
     "dependencies": {
-        "commander": "^9.1.0",
+        "commander": "^9.2.0",
         "fs-extra": "^10.1.0",
         "git-repo-info": "^2.1.1",
         "sax": "^1.2.4"
