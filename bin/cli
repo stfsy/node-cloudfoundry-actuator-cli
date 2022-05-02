@@ -2,11 +2,13 @@
 
 const resolve = require('path').resolve
 const version = require(resolve('package')).version
-const commander = require('commander')
+
+const { Command } = require('commander');
+const program = new Command();
 
 const Adapter = require('../lib/index')
 
-commander
+program
     .version(version)
     .option('--git', 'generate git info file')
     .option('--npm', 'generate npm build info file')
@@ -14,10 +16,12 @@ commander
     .option('--folder <string>', 'the output folder', '.actuator')
     .parse(process.argv)
 
-const git = commander.git
-const npm = commander.npm
-const mvn = commander.mvn
-const folder = commander.folder
+const options = program.opts()
+
+const git = options.git
+const npm = options.npm
+const mvn = options.mvn
+const folder = options.folder
 
 const contributors = []
 git && contributors.push('git')
