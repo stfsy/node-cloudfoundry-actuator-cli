@@ -30,8 +30,5 @@ describe('NpmInfoContributor', () => {
         it('should return the application version', () => {
             expect(npmInfoContributor.getInfo().version).to.equal(process.env.npm_package_version)
         })
-        it('should return the application description', () => {
-            expect(npmInfoContributor.getInfo().description).to.equal(process.env.npm_package_description)
-        })
     })
 })

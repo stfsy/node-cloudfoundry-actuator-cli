@@ -34,7 +34,6 @@ describe('Cli', () => {
             expect(json.build).not.to.be.undefined
             expect(json.build.name).not.to.be.undefined
             expect(json.build.version).not.to.be.undefined
-            expect(json.build.description).not.to.be.undefined
         })
     })
     describe('started with flag --mvn', () => {
@@ -79,7 +78,6 @@ describe('Cli', () => {
             expect(json.build).not.to.be.undefined
             expect(json.build.name).not.to.be.undefined
             expect(json.build.version).not.to.be.undefined
-            expect(json.build.description).not.to.be.undefined
         })
     })
 })
