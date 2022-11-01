@@ -49,7 +49,7 @@
         "istanbul": "^0.4.4",
         "jsdoc": "^3.6.11",
         "minami": "^1.1.1",
-        "mocha": "^10.0.0",
+        "mocha": "^10.1.0",
         "watch": "^1.0.2"
     },
     "dependencies": {
